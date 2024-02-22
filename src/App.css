@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+/* container for each row */
+.text-container {
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* left or right side of row */
+.text-col {
+    margin-right: 20px;
+    margin-bottom: 32px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* adds 32px margin to botton */
+.margin32 {
+    margin-bottom: 32px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* mid section headers */
+h2 {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 150%;
 }
 
-.App-link {
-  color: #61dafb;
+/* element headers */
+h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 30px */
+    letter-spacing: 0.4px; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* radio buttons */
+input[type="radio"] {
+    accent-color: #b64201;
+    margin-bottom: 8px;
+}
+
+/* application fee cost text box */
+#app-fee-cost-box {
+    margin-bottom: -12px;
+}
+
+/* checkbox */
+input[type="checkbox"] {
+    accent-color: #b64201;
+    margin-bottom: 8px;
+}
+
+/* custom width for number of beds header */
+#num-beds {
+    width: 433px;
+}
+
+.radio-checkbox-container {
+    display: flex;
+}
+
+.radio-checkbox-col {
+    width: 433px;
+}
+
+body {
+    background-color: #fbf7f3;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; /* Ensures text in the content stays left-aligned */
+}
+
+.content-container {
+    width: 100%; /* Adjust as needed */
+    margin: 20px auto;
+}
+
+.header {
+    margin: auto 150px;
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+input[type="text"], input[type="date"] {
+    background-color: #fbf7f3; /* Change this to your desired background color */
+    color: black; /* Set text color */
+    padding: 5px; /* Add some padding for better appearance */
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #ccc; /* Add a border */
+}
+
+/* all text boxes on screen */
+.textbox, input[type="date"] {
+    width: 300px;
+}
+
+/* aligns titles on top of text boxes */
+.element-header {
+    margin-bottom: 0;
+}
+
+/* styles only for available now button */
+#data-available-now {
+    display: flex;
+    align-items:end;
+}
+
+#data-available-now h3 {
+    margin-left: 30px; /* 103 */
+    margin-right: 10px;
+}
+
+/* submit button styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    margin-top: 67px;
+    padding: 8px 24px; 
+    color: white;
+    background-color: #b64201;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; border-radius: 12px; 
+    border: none;
+    
+}
+
+.submit-button:hover {
+    background-color: #7f2e00;
+    cursor: pointer;
+}
+
+/* for footer */
+form {
+    margin-bottom: 100px;
+}
+
+/* orange USHS */
+h1 {
+    margin-top: 54px;
+    color: #B64201;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 72px */
+    letter-spacing: 0.96px; 
+}
+
+/* logo styles */
+.logo-div {
+    position: absolute;
+    top: 45px;
+    left: 52px;
+    width: 9%;
+    flexShrink: 0;
 }
